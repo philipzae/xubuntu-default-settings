@@ -1,4 +1,29 @@
-xubuntu-default-settings (20.10.0) UNRELEASED; urgency=medium
+xubuntu-default-settings (21.04.2) hirsute; urgency=medium
+
+  * usr/share/xubuntu/applications/po/xds-desktop-files.pot:
+    - Make the new Sound entry translateable
+  * Translation updates: ar, de, en, es, fr, hi, hu, id, it, ko, lt,
+    nl, oc, pl, pt, sk, tr, ur
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Sat, 17 Apr 2021 05:58:03 -0400
+
+xubuntu-default-settings (21.04.1) hirsute; urgency=medium
+
+  * debian/xubuntu-default-settings.gsettings-override:
+    - Set window size of file dialog to ensure it fits on screen
+  * etc/xdg/xdg-xubuntu/menus/xfce-settings-manager.menu,
+    usr/share/xubuntu/applications/settings-hardware-sound.desktop.in,
+    usr/share/xubuntu/applications/po/POTFILES.in:
+    - Add Sound entry to Hardware section of Settings Manager
+  * etc/xdg/xdg-xubuntu/menus/xfce-applications.menu:
+    - Exclude Texinfo and Pavucontrol from menu
+  * etc/skel/.config/hexchat/hexchat.conf,
+    etc/skel/.config/hexchat/servlist.conf:
+    - Add hexchat config to preselect freenode and join #xubuntu
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 22 Feb 2021 22:37:02 -0500
+
+xubuntu-default-settings (21.04.0) hirsute; urgency=medium
 
   * etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml:
     - Set Gtk/CursorThemeName to DMZ-White (LP: #1838008)
@@ -6,8 +31,32 @@ xubuntu-default-settings (20.10.0) UNRELEASED; urgency=medium
     - Hide confusing xfce4-terminal-settings.desktop
   * usr/share/xubuntu/applications/xfce4-terminal.desktop:
     - Dropped, enable showing in the menu (LP: #1851387)
+  * etc/xdg/xdg-xubuntu/xfce4/panel/default.xml:
+    - Migrate statusnotifier to systray and remove from panel (LP: #1907871)
+    - Remove separator between clock and tray, add padding
+    - Enable pulseaudio plugin window focus support
+  * etc/xdg/xdg-xubuntu/xfce4/helpers.rc:
+    - Change FileManager key to lowercase thunar to fix defaults
+  * debian/live/whiskermenu-1.rc,
+    etc/xdg/xdg-xubuntu/menus/xfce-applications.menu,
+    etc/xdg/xdg-xubuntu/xfce4/whiskermenu/defaults.rc,
+    usr/share/xubuntu/applications/defaults.list:
+    - Replace exo-* with xfce4-* commands
+  * etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+    - Hide default icons: File System and Removable Devices
+    - Exclude applications menu on desktop right click
+  * etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/thunar.xml:
+    - Switch default location selector to path bar
+    - Enabled opening folders in new tab on middle click
+    - Disabled changing window icon for special folders
+  * etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    - Apply upstream keyboard bindings:
+      - Ctrl+Alt+Delete: xfce4-session-logout
+      - Ctrl+Shift+Escape: xfce4-taskmanager
+      - Super+R: xfrun4
+      - Super+E, Ctrl+Alt+F: exo-open --launch FileManager
 
- -- Sean Davis <smd.seandavis@gmail.com>  Mon, 25 May 2020 19:00:07 -0400
+ -- Sean Davis <smd.seandavis@gmail.com>  Sat, 12 Dec 2020 14:26:01 -0500
 
 xubuntu-default-settings (20.04.4) focal; urgency=medium
 
