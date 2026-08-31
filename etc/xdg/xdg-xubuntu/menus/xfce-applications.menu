@@ -8,8 +8,8 @@
     <DefaultDirectoryDirs/>
 
     <Include>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>xfce4-web-browser.desktop</Filename>
+        <Filename>xfce4-mail-reader.desktop</Filename>
         <Filename>xfce-settings-manager.desktop</Filename>
         <Filename>org.gnome.Software.desktop</Filename>
         <Filename>xfhelp4.desktop</Filename>
@@ -20,8 +20,8 @@
     </Include>
 
     <Layout>
-        <Filename>exo-web-browser.desktop</Filename>
-        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>xfce4-web-browser.desktop</Filename>
+        <Filename>xfce4-mail-reader.desktop</Filename>
         <Separator/>
         <Filename>xfce-settings-manager.desktop</Filename>
         <Separator/>
@@ -49,6 +49,7 @@
         <Exclude>
             <Or>
                 <Filename>xfce4-about.desktop</Filename>
+                <Filename>info.desktop</Filename>
                 <Category>Settings</Category>
                 <Category>System</Category>
             </Or>
@@ -109,6 +110,11 @@
             <Category>Video</Category>
             <Category>AudioVideo</Category>
         </Include>
+        <Exclude>
+            <Or>
+                <Filename>pavucontrol.desktop</Filename>
+            </Or>
+        </Exclude>
     </Menu>
 
     <Menu>
@@ -119,8 +125,8 @@
         </Include>
         <Exclude>
             <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
+                <Filename>xfce4-mail-reader.desktop</Filename>
+                <Filename>xfce4-web-browser.desktop</Filename>
             </Or>
         </Exclude>
     </Menu>
@@ -141,8 +147,8 @@
         </Include>
         <Exclude>
             <Or>
-                <Filename>exo-mail-reader.desktop</Filename>
-                <Filename>exo-web-browser.desktop</Filename>
+                <Filename>xfce4-mail-reader.desktop</Filename>
+                <Filename>xfce4-web-browser.desktop</Filename>
                 <Filename>xfce-settings-manager.desktop</Filename>
                 <Filename>xfce4-terminal-settings.desktop</Filename>
             </Or>

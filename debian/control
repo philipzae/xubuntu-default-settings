@@ -2,18 +2,17 @@ Source: xubuntu-default-settings
 Section: x11
 Priority: optional
 Maintainer: Xubuntu Developers <xubuntu-devel@lists.ubuntu.com>
-Build-Depends: debhelper-compat (= 12), dh-python, intltool, python3
-Standards-Version: 4.5.0
-Homepage: https://launchpad.net/xubuntu-default-settings
+Build-Depends: debhelper-compat (= 13), dh-python, intltool, python3
+Standards-Version: 4.6.2
+Homepage: https://github.com/Xubuntu/xubuntu-default-settings
 Rules-Requires-Root: no
-Vcs-Git: https://git.launchpad.net/xubuntu-default-settings.git
-Vcs-Browser: https://git.launchpad.net/xubuntu-default-settings/
+Vcs-Git: https://github.com/Xubuntu/xubuntu-default-settings.git
+Vcs-Browser: https://github.com/Xubuntu/xubuntu-default-settings
 
 Package: xubuntu-default-settings
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: dbus-user-session,
-         fonts-noto-hinted,
          lightdm-gtk-greeter (>= 2.0.1-1),
          systemd (>= 231-1~),
          x11-common (>= 1:7.6+7ubuntu2),
@@ -21,7 +20,8 @@ Depends: dbus-user-session,
          xubuntu-artwork (>= 12.10.1~),
          ${misc:Depends},
          ${python3:Depends}
-Recommends: libxfce4ui-utils
+Recommends: libxfce4ui-utils,
+         fonts-noto-core
 Breaks: upstart (<< 1.13.2-0ubuntu28~)
 Provides: lightdm-gtk-greeter-config
 Description: default settings for the Xubuntu desktop
